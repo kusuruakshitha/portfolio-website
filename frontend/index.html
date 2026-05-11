@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1 class="logo">INTERNSHIP PORTFOLIO</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#frontend">Frontend</a></li>
+        <li><a href="#backend">Backend</a></li>
+        <li><a href="#database">Database</a></li>
+        <li><a href="#uiux">UI/UX</a></li>
+        <li><a href="#devops">DevOps</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">Light theme</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>FULL-STACK PORTFOLIO FOR INTERNSHIP-READY WEB DEVELOPMENT</h2>
+    <p>Building elegant web experiences with a powerful backend API and polished frontend design.</p>
+    <button onclick="scrollToContact()">Work with me</button>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View work</button>
+    <div class="counters">
+      <span id="projectCount">0 Projects</span>
+      <span id="messageCount">0 Messages</span>
+      <span id="uptime">0s Uptime</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About</h2>
+    <p>A full-stack developer ready for internships and modern product development.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>JavaScript, Node.js, Express, MongoDB, HTML, CSS, REST API, Deployment.</p>
+  </section>
+
+  <!-- Category Sections -->
+  <section id="frontend"><h2>Frontend</h2></section>
+  <section id="backend"><h2>Backend</h2></section>
+  <section id="database"><h2>Database</h2></section>
+  <section id="uiux"><h2>UI/UX</h2></section>
+  <section id="devops"><h2>DevOps</h2></section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2>FEATURES</h2>
+    <div class="features-grid">
+      <div>Live API integration</div>
+      <div>Category filtering</div>
+      <div>Contact form with backend storage</div>
+      <div>Responsive design</div>
+      <div>Theme switcher</div>
+      <div>Search-enabled project browser</div>
+      <div>Favorite projects</div>
+      <div>Modal project details</div>
+      <div>Live summary statistics</div>
+    </div>
+  </section>
+
+  <!-- Favorites -->
+  <section id="favorites">
+    <h2>Your saved projects</h2>
+    <div id="favorite-list"></div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <input type="text" id="search" placeholder="Search projects by title or description">
+    <div id="project-list" class="project-grid"></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your full name" required>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <input type="text" id="subject" placeholder="Internship opportunity" required>
+      <textarea id="message" placeholder="Tell me about your role or the project" required></textarea>
+      <button type="submit">Send message</button>
+    </form>
+    <div class="contact-details">
+      <p>Email: akshitha.dev@example.com</p>
+      <p>Location: Remote / open to internship opportunities</p>
+      <p>Availability: Available for internships starting May 2026</p>
+    </div>
+  </section>
+
+  <!-- Confirmation Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <p id="modalMessage"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer><p>© 2026 Internship Portfolio</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
